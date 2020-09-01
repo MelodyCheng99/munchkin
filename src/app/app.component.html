@@ -21,11 +21,17 @@
     margin: 0;
   }
 
-  .content {
+  .buttons {
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -40%);
+  }
+
+  .penguinImage {
+    position: absolute;
+    bottom: 0%;
+    margin-left: 5%;
   }
 
   .card {
@@ -67,19 +73,24 @@
     border: 1px solid #31c3a6;
     background-color: #d1f2eb;
   }
-
 </style>
 
-<div class="content" role="main">
+<div>
+  <div class="buttons">
 
-  <div class="card signUpCard">
-    <h2>Sign Up</h2>
+    <div class="card signUpCard">
+      <h2>Sign Up</h2>
+    </div>
+
+    <div class="card logInCard">
+      <h2>Log In</h2>
+    </div>
+
   </div>
 
-  <div class="card logInCard">
-    <h2>Log In</h2>
+  <div class="penguinImage">
+    <img src="../assets/images/penguins/peeking-penguin-turquoise.png" />
   </div>
-
 </div>
 
 <router-outlet></router-outlet>
