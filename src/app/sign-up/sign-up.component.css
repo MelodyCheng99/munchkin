@@ -1,0 +1,9 @@
+.signUpCard {
+    border: 1px solid #0da2ff;
+    background-color: #e8ffff;
+}
+
+.signUpCard:hover {
+    background-color: #d9f1ff;
+    border: 1px solid #009dff;
+}

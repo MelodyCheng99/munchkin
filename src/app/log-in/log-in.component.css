@@ -1,0 +1,9 @@
+.logInCard {
+    border: 1px solid #48c9b0;
+    background-color: #e8f8f5;
+}
+
+.logInCard:hover {
+    border: 1px solid #31c3a6;
+    background-color: #d1f2eb;
+}
