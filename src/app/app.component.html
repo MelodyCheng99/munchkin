@@ -22,33 +22,17 @@
   }
 
   .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  svg.material-icons {
-    height: 24px;
-    width: auto;
-  }
-
-  svg.material-icons:not(:last-child) {
-    margin-right: 8px;
-  }
-
-  .card svg.material-icons path {
-    fill: #888;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
   }
 
   .card {
     border-radius: 4px;
-    border: 1px solid #eee;
-    background-color: #fafafa;
-    height: 80px;
     width: 200px;
+    height: 100px;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -61,17 +45,41 @@
   .card:hover {
     transform: translateY(-3px);
     box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    fill: rgb(105, 103, 103);
-    border: 1px solid #1976d2;
+    cursor: pointer;
+  }
+
+  .signUpCard {
+    border: 1px solid #0da2ff;
+    background-color: #e8ffff;
+  }
+
+  .signUpCard:hover {
+    background-color: #d9f1ff;
+    border: 1px solid #009dff;
+  }
+
+  .logInCard {
+    border: 1px solid #48c9b0;
+    background-color: #e8f8f5;
+  }
+
+  .logInCard:hover {
+    border: 1px solid #31c3a6;
+    background-color: #d1f2eb;
   }
 
 </style>
 
 <div class="content" role="main">
-  <div class="card-container card">
-    <h3>Sign Up</h3>
-    <svg class="material-icons" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+
+  <div class="card signUpCard">
+    <h2>Sign Up</h2>
   </div>
+
+  <div class="card logInCard">
+    <h2>Log In</h2>
+  </div>
+
 </div>
 
 <router-outlet></router-outlet>
