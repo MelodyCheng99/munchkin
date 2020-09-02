@@ -1,15 +1,11 @@
-<form>
+<div class="loginInputContainer">
+    <p class="textField">Username</p>
+    <input #username class="inputField textField">
+    <br />
+    <p class="textField">Password</p>
+    <input #password type="password" class="inputField textField">
+</div>
 
-    <div class="loginInputContainer">
-        <p class="textField">Username</p>
-        <input class="inputField textField">
-        <br />
-        <p class="textField">Password</p>
-        <input class="inputField textField">
-    </div>
-
-    <div class="card logInCard">
-        <h2>Log In</h2>
-    </div>
-    
-</form>
+<button class="card logInCard" (click)="login(username.value, password.value)">
+    <h2>Log In</h2>
+</button>

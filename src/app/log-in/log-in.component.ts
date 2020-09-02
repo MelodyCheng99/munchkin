@@ -12,4 +12,10 @@ export class LogInComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  login(username: string, password: string) {
+    // TODO: Replace with proper implementation
+    console.log(username)
+    console.log(password)
+  }
+
 }

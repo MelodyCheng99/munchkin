@@ -53,6 +53,10 @@ p {
     cursor: pointer;
 }
 
+.card:focus {
+    outline: none;
+}
+
 .inputField {
     width: 300px;
     height: 25px;
