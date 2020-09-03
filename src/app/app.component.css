@@ -27,12 +27,6 @@ p {
     transform: translate(-50%, -40%);
 }
 
-.penguinImage {
-    position: absolute;
-    bottom: 0%;
-    margin-left: 5%;
-}
-
 .card {
     border-radius: 4px;
     width: 300px;
@@ -71,4 +65,33 @@ p {
 
 .textField {
     font-size: 16px;
+}
+
+.mainScreenTitleContainer {
+    position: absolute;
+    top: 15%;
+    left: 28%;
+}
+
+.mainScreenTitle {
+    transform: rotate(-20deg);
+    font-size: 72px;
+    font-weight: bold;
+    color: #c0c0c0;
+    text-shadow: 3px 3px #808080;
+}
+
+.penguinImageContainer {
+    position: absolute;
+    bottom: 0%;
+    margin-left: 5%;
+}
+
+.puffleImageContainer {
+    position: absolute;
+    right: 0%;
+}
+
+.puffleImage {
+    max-width: 50%;
 }
